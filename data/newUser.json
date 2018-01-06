@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "userID": "",
+  "cityName": "",
+  "cityCitizens": 10,
+  "cityScientists": 0,
+  "citySoldiers": 0,
+  "citySchools": 0,
+  "cityDebuffs": []
+}

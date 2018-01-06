@@ -1,0 +1,8 @@
+mixin eventBox(event)
+  .section.flex-column.twitch-event(class=event.channel)
+    .inner.box.white
+      .channel
+        span #{event.channel} -&nbsp;
+        span(data-date=event.date)= h.moment(event.date).fromNow()
+      .message= event.eventData.message
+        

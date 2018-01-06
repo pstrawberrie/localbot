@@ -1,0 +1,46 @@
+/* Structure */
+
+// General
+html, body {width:100%;height:100%;}
+.section {
+  .flex-display();
+  .relative;
+}
+.flex-row { .flex-direction(row); }
+.flex-column { .flex-direction(column); }
+
+// Helpers
+
+// Justify Content
+.space-between { .justify-content(space-between); }
+.space-around { .justify-content(space-around); }
+.justify-center { .justify-content(center); }
+.justify-start { .justify-content(flex-start); }
+.justify-end { .justify-content(flex-end); }
+
+// Wrapping
+.flex-wrap { .flex-wrap(wrap); }
+.flex-nowrap { .flex-wrap(nowrap); }
+
+// Align Self
+.self-stretch { .align-self(stretch); }
+
+// Align Items
+.items-center {.align-items(center); }
+
+// Basic Grid
+.grid-wrap {
+  .section;.flex-wrap;
+  @media (max-width:900px) { .flex-column;.flex-nowrap; }
+}
+.one-fourth {
+  .section;
+  width:25%;
+  @media (max-width:1439px) { width:50%; }
+  @media (max-width:900px) { width:100%; .flex-column; }
+}
+.three-fourths {
+  width:75%;
+  @media (max-width:1439px) { width:50%; }
+  @media (max-width:900px) { width:100%; .flex-column; }
+}
